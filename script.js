@@ -87,5 +87,5 @@ function exportTeam(){
 }
 
 function exportOrder(){
-  document.getElementById("order").innerHTML += document.getElementById("sortable").children[0].innerHTML + " / " + document.getElementById("sortable").children[1].innerHTML + " / " + document.getElementById("sortable").children[2].innerHTML + " / " + document.getElementById("sortable").children[3].innerHTML + " / " + document.getElementById("sortable").children[4].innerHTML + " / " + document.getElementById("sortable").children[5].innerHTML + "\n"
+  document.getElementById("order").innerHTML += "\n" + document.getElementById("sortable").children[0].innerHTML + " / " + document.getElementById("sortable").children[1].innerHTML + " / " + document.getElementById("sortable").children[2].innerHTML + " / " + document.getElementById("sortable").children[3].innerHTML + " / " + document.getElementById("sortable").children[4].innerHTML + " / " + document.getElementById("sortable").children[5].innerHTML;
 }

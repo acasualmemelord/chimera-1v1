@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle chimera-1v1",
+        "command": "chimera-1v1:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "chimera-1v1",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "chimera-1v1:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

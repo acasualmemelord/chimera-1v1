@@ -1,3 +1,5 @@
+var chimeraNumber = 0;
+
 function submit(){
   document.getElementById("cp").innerHTML = document.getElementById("sortable").children[0].children[0].value;
   document.getElementById("ci").innerHTML = document.getElementById("sortable").children[1].children[1].value;
@@ -64,5 +66,12 @@ function exportTeam(){
 }
 
 function exportOrder(){
-  document.getElementById("order").innerHTML += "\n" + document.getElementById("chimeraName").value + ": " + document.getElementById("sortable").children[0].children[0].value + " / " + document.getElementById("sortable").children[1].children[0].value + " / " + document.getElementById("sortable").children[2].children[0].value + " / " + document.getElementById("sortable").children[3].children[0].value + " / " + document.getElementById("sortable").children[4].children[0].value + " / " + document.getElementById("sortable").children[5].children[0].value;
+  chimeraNumber ++;
+  document.getElementById("order").innerHTML += "\n" + ((document.getElementById("chimeraName").value === "") ? ("Chimera #" + chimeraNumber) : document.getElementById("chimeraName").value) + ": " +
+                                                        document.getElementById("sortable").children[0].children[0].value + " / " +
+                                                        document.getElementById("sortable").children[1].children[0].value + " / " +
+                                                        document.getElementById("sortable").children[2].children[0].value + " / " +
+                                                        document.getElementById("sortable").children[3].children[0].value + " / " +
+                                                        document.getElementById("sortable").children[4].children[0].value + " / " +
+                                                        document.getElementById("sortable").children[5].children[0].value;
 }

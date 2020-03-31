@@ -62,5 +62,5 @@ function exportTeam(){
 }
 
 function exportOrder(){
-  document.getElementById("order").innerHTML += "\n" + document.getElementById("sortable").children[0].children[0].value + " / " + document.getElementById("sortable").children[1].children[0].value + " / " + document.getElementById("sortable").children[2].children[0].value + " / " + document.getElementById("sortable").children[3].children[0].value + " / " + document.getElementById("sortable").children[4].children[0].value + " / " + document.getElementById("sortable").children[5].children[0].value;
+  document.getElementById("order").innerHTML += "\n" + document.getElementById("chimeraName").value + ": " + document.getElementById("sortable").children[0].children[0].value + " / " + document.getElementById("sortable").children[1].children[0].value + " / " + document.getElementById("sortable").children[2].children[0].value + " / " + document.getElementById("sortable").children[3].children[0].value + " / " + document.getElementById("sortable").children[4].children[0].value + " / " + document.getElementById("sortable").children[5].children[0].value;
 }

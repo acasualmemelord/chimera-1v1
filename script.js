@@ -8,6 +8,8 @@ function submit(){
   document.getElementById("cm2").innerHTML = document.getElementById("sortable").children[4].children[6].value;
   document.getElementById("cm3").innerHTML = document.getElementById("sortable").children[5].children[7].value;
   document.getElementById("cm4").innerHTML = document.getElementById("sortable").children[5].children[8].value;
+
+  document.getElementById("chimeraMon").src = "http://play.pokemonshowdown.com/sprites/xyani/" + document.getElementById("sortable").children[0].children[0].value.toLowerCase() + ".gif";
 }
 
 function exportTeam(){

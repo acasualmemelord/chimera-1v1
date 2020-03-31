@@ -21,7 +21,7 @@ function exportTeam(){
                                               "\n- " + document.getElementById("sortable").children[0].children[6].value +
                                               "\n- " + document.getElementById("sortable").children[0].children[7].value +
                                               "\n- " + document.getElementById("sortable").children[0].children[8].value + "\n\n" +
-                                              document.getElementById("sortable").children[1].children[1].value + " @ " + document.getElementById("sortable").children[1].children[1].value +
+                                              document.getElementById("sortable").children[1].children[0].value + " @ " + document.getElementById("sortable").children[1].children[1].value +
                                               "\nAbility: " + document.getElementById("sortable").children[1].children[2].value +
                                               "\nEVs: " + document.getElementById("sortable").children[1].children[3].value +
                                               "\n" + document.getElementById("sortable").children[1].children[4].value +
@@ -29,7 +29,7 @@ function exportTeam(){
                                               "\n- " + document.getElementById("sortable").children[1].children[6].value +
                                               "\n- " + document.getElementById("sortable").children[1].children[7].value +
                                               "\n- " + document.getElementById("sortable").children[1].children[8].value + "\n\n" +
-                                              document.getElementById("sortable").children[2].children[2].value + " @ " + document.getElementById("sortable").children[2].children[1].value +
+                                              document.getElementById("sortable").children[2].children[0].value + " @ " + document.getElementById("sortable").children[2].children[1].value +
                                               "\nAbility: " + document.getElementById("sortable").children[2].children[2].value +
                                               "\nEVs: " + document.getElementById("sortable").children[2].children[3].value +
                                               "\n" + document.getElementById("sortable").children[2].children[4].value +
@@ -37,7 +37,7 @@ function exportTeam(){
                                               "\n- " + document.getElementById("sortable").children[2].children[6].value +
                                               "\n- " + document.getElementById("sortable").children[2].children[7].value +
                                               "\n- " + document.getElementById("sortable").children[2].children[8].value + "\n\n" +
-                                              document.getElementById("sortable").children[3].children[3].value + " @ " + document.getElementById("sortable").children[3].children[1].value +
+                                              document.getElementById("sortable").children[3].children[0].value + " @ " + document.getElementById("sortable").children[3].children[1].value +
                                               "\nAbility: " + document.getElementById("sortable").children[3].children[2].value +
                                               "\nEVs: " + document.getElementById("sortable").children[3].children[3].value +
                                               "\n" + document.getElementById("sortable").children[3].children[4].value +
@@ -45,7 +45,7 @@ function exportTeam(){
                                               "\n- " + document.getElementById("sortable").children[3].children[6].value +
                                               "\n- " + document.getElementById("sortable").children[3].children[7].value +
                                               "\n- " + document.getElementById("sortable").children[3].children[8].value + "\n\n" +
-                                              document.getElementById("sortable").children[4].children[4].value + " @ " + document.getElementById("sortable").children[4].children[1].value +
+                                              document.getElementById("sortable").children[4].children[0].value + " @ " + document.getElementById("sortable").children[4].children[1].value +
                                               "\nAbility: " + document.getElementById("sortable").children[4].children[2].value +
                                               "\nEVs: " + document.getElementById("sortable").children[4].children[3].value +
                                               "\n" + document.getElementById("sortable").children[4].children[4].value +
@@ -53,7 +53,7 @@ function exportTeam(){
                                               "\n- " + document.getElementById("sortable").children[4].children[6].value +
                                               "\n- " + document.getElementById("sortable").children[4].children[7].value +
                                               "\n- " + document.getElementById("sortable").children[4].children[8].value + "\n\n" +
-                                              document.getElementById("sortable").children[5].children[5].value + " @ " + document.getElementById("sortable").children[5].children[1].value +
+                                              document.getElementById("sortable").children[5].children[0].value + " @ " + document.getElementById("sortable").children[5].children[1].value +
                                               "\nAbility: " + document.getElementById("sortable").children[5].children[2].value +
                                               "\nEVs: " + document.getElementById("sortable").children[5].children[3].value +
                                               "\n" + document.getElementById("sortable").children[5].children[4].value +

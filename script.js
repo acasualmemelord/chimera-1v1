@@ -17,9 +17,8 @@ function submit(){
 function importTeam(){
   var team = document.getElementById("paste").value.split("\n\n");
   var i = 0;
-  document.getElementById("sortable").children[0].children[0].value = team[0]);
-  alert(team);
-  alert(team[0]);
+  document.getElementById("sortable").children[0].children[0].value = team[0];
+  console.log("Hello!")
   i = team.indexOf("@");
   document.getElementById("sortable").children[0].children[1].value = team.substring(i, team.indexOf("\n"));
 }

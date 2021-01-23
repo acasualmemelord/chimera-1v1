@@ -31,6 +31,10 @@
       <div id="o5" class="sortable-item"><input type="text" id="p5" list="allmons" onInput="submit()"> @ <input type="text" id="i5" list="allitems" onInput="submit()"> Ability: <input type="text" id="a5" list="allabilities" onInput="submit()"> EVs: <input type="text" id="e5" onInput="submit()"> Nature: <input type="text" id="n5" list="allnatures" onInput="submit()" size="10"> Moves: <input type="text" id="m15" list="allmoves" onInput="submit()">  <input type="text" id="m25" list="allmoves" onInput="submit()"> <input type="text" id="m35" list="allmoves" onInput="submit()">  <input type="text" id="m45" list="allmoves" onInput="submit()"></div>
       <div id="o6" class="sortable-item"><input type="text" id="p6" list="allmons" onInput="submit()"> @ <input type="text" id="i6" list="allitems" onInput="submit()"> Ability: <input type="text" id="a6" list="allabilities" onInput="submit()"> EVs: <input type="text" id="e6" onInput="submit()"> Nature: <input type="text" id="n6" list="allnatures" onInput="submit()" size="10"> Moves: <input type="text" id="m16" list="allmoves" onInput="submit()">  <input type="text" id="m26" list="allmoves" onInput="submit()"> <input type="text" id="m36" list="allmoves" onInput="submit()">  <input type="text" id="m46" list="allmoves" onInput="submit()"></div>
     </div>
+    <form action="/action_page.php">
+      <textarea name="paste" id = "paste" rows="10" cols="30"></textarea>
+      <br><button type="button" onclick="importTeam()">Import Team</button><br><br>
+    </form>
     <button type="button" onclick="exportTeam()">Export Team</button><br>
     <input type="text" id="chimeraName" placeholder="Enter a chimera tag">
     <button type="button" onclick="exportOrder()">Export Order</button><br>

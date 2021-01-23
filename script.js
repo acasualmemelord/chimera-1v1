@@ -14,6 +14,16 @@ function submit(){
   document.getElementById("chimeraMon").src = "http://play.pokemonshowdown.com/sprites/xyani/" + document.getElementById("sortable").children[0].children[0].value.toLowerCase() + ".gif";
 }
 
+function importTeam(){
+  var team = document.getElementById("paste").value.split("\n\n");
+  var i = 0;
+  document.getElementById("sortable").children[0].children[0].value = team[0]);
+  alert(team);
+  alert(team[0]);
+  i = team.indexOf("@");
+  document.getElementById("sortable").children[0].children[1].value = team.substring(i, team.indexOf("\n"));
+}
+
 function exportTeam(){
   document.getElementById("team").innerHTML = document.getElementById("sortable").children[0].children[0].value + " @ " + document.getElementById("sortable").children[0].children[1].value +
                                               "\nAbility: " + document.getElementById("sortable").children[0].children[2].value +

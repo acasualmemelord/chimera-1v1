@@ -38,6 +38,7 @@ function importTeam(){
       document.getElementById("sortable").children[j].children[8].value = team[j].substring(i, team[j].indexOf("  ", i + 1));
     }catch(err){
       alert("Your team paste was found to be invalid. Perhaps a typo?")
+      break;
     }
   }
 }

@@ -18,23 +18,27 @@ function importTeam(){
   var team = document.getElementById("paste").value.split("\n\n");
   var i = 0;
   for(var j = 0; j < 6; j ++){
-    document.getElementById("sortable").children[j].children[0].value = team[j].substring(0, team[j].indexOf("@") - 1);
-    i = team[j].indexOf("@") + 2;
-    document.getElementById("sortable").children[j].children[1].value = team[j].substring(i, team[j].indexOf("\n") - 2);
-    i = team[j].indexOf("\n") + 2;
-    document.getElementById("sortable").children[j].children[2].value = team[j].substring(i + 8, team[j].indexOf("\n", i));
-    i = team[j].indexOf("\n", i + 1) + 6;
-    document.getElementById("sortable").children[j].children[3].value = team[j].substring(i, team[j].indexOf("\n", i));
-    i = team[j].indexOf("\n", i + 1);
-    document.getElementById("sortable").children[j].children[4].value = team[j].substring(i, team[j].indexOf("\n", i + 1) - 9);
-    i = team[j].indexOf("\n", i + 1) + 3;
-    document.getElementById("sortable").children[j].children[5].value = team[j].substring(i, team[j].indexOf("\n", i + 1));
-    i = team[j].indexOf("\n", i + 1) + 3;
-    document.getElementById("sortable").children[j].children[6].value = team[j].substring(i, team[j].indexOf("\n", i + 1));
-    i = team[j].indexOf("\n", i + 1) + 3;
-    document.getElementById("sortable").children[j].children[7].value = team[j].substring(i, team[j].indexOf("\n", i + 1));
-    i = team[j].indexOf("\n", i + 1) + 3;
-    document.getElementById("sortable").children[j].children[8].value = team[j].substring(i, team[j].indexOf("  ", i + 1));
+    try{
+      document.getElementById("sortable").children[j].children[0].value = team[j].substring(0, team[j].indexOf("@") - 1);
+      i = team[j].indexOf("@") + 2;
+      document.getElementById("sortable").children[j].children[1].value = team[j].substring(i, team[j].indexOf("\n") - 2);
+      i = team[j].indexOf("\n") + 2;
+      document.getElementById("sortable").children[j].children[2].value = team[j].substring(i + 8, team[j].indexOf("\n", i));
+      i = team[j].indexOf("\n", i + 1) + 6;
+      document.getElementById("sortable").children[j].children[3].value = team[j].substring(i, team[j].indexOf("\n", i));
+      i = team[j].indexOf("\n", i + 1);
+      document.getElementById("sortable").children[j].children[4].value = team[j].substring(i, team[j].indexOf("\n", i + 1) - 9);
+      i = team[j].indexOf("\n", i + 1) + 3;
+      document.getElementById("sortable").children[j].children[5].value = team[j].substring(i, team[j].indexOf("\n", i + 1));
+      i = team[j].indexOf("\n", i + 1) + 3;
+      document.getElementById("sortable").children[j].children[6].value = team[j].substring(i, team[j].indexOf("\n", i + 1));
+      i = team[j].indexOf("\n", i + 1) + 3;
+      document.getElementById("sortable").children[j].children[7].value = team[j].substring(i, team[j].indexOf("\n", i + 1));
+      i = team[j].indexOf("\n", i + 1) + 3;
+      document.getElementById("sortable").children[j].children[8].value = team[j].substring(i, team[j].indexOf("  ", i + 1));
+    }catch(err){
+      alert("Your team paste was found to be invalid. Perhaps a typo?")
+    }
   }
 }
 

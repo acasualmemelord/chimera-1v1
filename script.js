@@ -44,7 +44,7 @@ function importTeam(){
 }
 
 function exportTeam(){
-  document.getElementById("team").innerHTML = document.getElementById("sortable").children[0].children[0].value + " @ " + document.getElementById("sortable").children[0].children[1].value +
+  document.getElementById("paste").value = document.getElementById("sortable").children[0].children[0].value + " @ " + document.getElementById("sortable").children[0].children[1].value +
                                               "\nAbility: " + document.getElementById("sortable").children[0].children[2].value +
                                               "\nEVs: " + document.getElementById("sortable").children[0].children[3].value +
                                               "\n" + document.getElementById("sortable").children[0].children[4].value +

@@ -33,13 +33,11 @@
     </div>
     <form action="/action_page.php">
       <textarea name="paste" id = "paste" rows="10" cols="30"></textarea>
-      <br><button type="button" onclick="importTeam()">Import Team</button><br><br>
+      <br><button type="button" onclick="importTeam()">Import Team</button><button type="button" onclick="exportTeam()">Export Team</button><br>
     </form>
-    <button type="button" onclick="exportTeam()">Export Team</button><br>
     <input type="text" id="chimeraName" placeholder="Enter a chimera tag">
     <button type="button" onclick="exportOrder()">Export Order</button><br>
   </div>
-  <pre id="team">[Team will export here]</pre>
   <pre id="order">Chimeras:</pre>
     <script src="script.js"></script>
     <script src="dragula.js"></script>

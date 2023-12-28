@@ -30,6 +30,7 @@ wrapper{
 container{
   display:table-cell;
   width: 50%;
+  float: left;
 }
 .container > div, .gu-mirror {
     margin: 10px;

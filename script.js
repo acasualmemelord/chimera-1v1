@@ -1,6 +1,6 @@
 var chimeraNumber = 0;
 
-function submit(){
+function submit() {
 	document.getElementById("cp").innerHTML = document.getElementById("sortable").children[0].children[0].value;
 	document.getElementById("ci").innerHTML = document.getElementById("sortable").children[1].children[1].value;
 	document.getElementById("ca").innerHTML = document.getElementById("sortable").children[2].children[2].value;
@@ -13,9 +13,13 @@ function submit(){
 	document.getElementById("cm4").innerHTML = document.getElementById("sortable").children[5].children[9].value;
 
 	document.getElementById("chimeraMon").src = "http://play.pokemonshowdown.com/sprites/bw/" + document.getElementById("sortable").children[0].children[0].value.toLowerCase().replaceAll(" ", "") + ".png";
+	
+	document.getElementById("chimeraMon").onerror = function() {
+		document.getElementById("chimeraMon").src = "http://play.pokemonshowdown.com/sprites/bw/0.png";
+	}
 }
 
-function importTeam(){
+function importTeam() {
 	var team = document.getElementById("teampaste").value.split("\n\n");
 	var i = 0;
 	for (var j = 0; j < 6; j ++) {
@@ -63,7 +67,23 @@ function ciear(number) {
 	submit();
 }
 
-function importSet(){
+function clearall() {
+	for(var i = 0; i < 6; i ++) {
+		document.getElementById("sortable").children[i].children[0].value = "";
+		document.getElementById("sortable").children[i].children[1].value = "";
+		document.getElementById("sortable").children[i].children[2].value = "";
+		document.getElementById("sortable").children[i].children[3].value = "";
+		document.getElementById("sortable").children[i].children[4].value = "";
+		document.getElementById("sortable").children[i].children[5].value = "";
+		document.getElementById("sortable").children[i].children[6].value = "";
+		document.getElementById("sortable").children[i].children[7].value = "";
+		document.getElementById("sortable").children[i].children[8].value = "";
+		document.getElementById("sortable").children[i].children[9].value = "";
+	}
+	submit();
+}
+
+function importSet() {
 	var set = document.getElementById("setpaste").value;
 	var i = 0;
 	var j = parseInt(document.getElementById("importmon").value) - 1;
@@ -94,7 +114,7 @@ function importSet(){
 	}
 }
 
-function exportTeam(){
+function exportTeam() {
 	document.getElementById("teampaste").value = document.getElementById("sortable").children[0].children[0].value + " @ " + document.getElementById("sortable").children[0].children[1].value +
 												"\nAbility: " + document.getElementById("sortable").children[0].children[2].value +
 												"\nTera Type: " + document.getElementById("sortable").children[0].children[3].value +
@@ -151,7 +171,7 @@ function exportTeam(){
 												"\n- " + document.getElementById("sortable").children[5].children[9].value + "\n\n"
 }
 
-function exportOrder(){
+function exportOrder() {
 	chimeraNumber ++;
 	document.getElementById("order").innerHTML += "\n" + ((document.getElementById("chimeraName").value === "") ? ("Chimera #" + chimeraNumber) : document.getElementById("chimeraName").value) + ": " +
 														document.getElementById("sortable").children[0].children[0].value + " / " +

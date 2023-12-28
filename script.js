@@ -40,12 +40,27 @@ function importTeam(){
 			i = team[j].indexOf("\n", i + 1) + 3;
 			document.getElementById("sortable").children[j].children[9].value = team[j].substring(i);
 			submit();
-		}catch(err){
+		} catch(err) {
 			alert("Your team paste was found to be invalid. Perhaps a typo?")
 			console.log(err);
 			break;
 		}
 	}
+}
+
+function ciear(number) {
+	var j = number - 1;
+	document.getElementById("sortable").children[j].children[0].value = "";
+	document.getElementById("sortable").children[j].children[1].value = "";
+	document.getElementById("sortable").children[j].children[2].value = "";
+	document.getElementById("sortable").children[j].children[3].value = "";
+	document.getElementById("sortable").children[j].children[4].value = "";
+	document.getElementById("sortable").children[j].children[5].value = "";
+	document.getElementById("sortable").children[j].children[6].value = "";
+	document.getElementById("sortable").children[j].children[7].value = "";
+	document.getElementById("sortable").children[j].children[8].value = "";
+	document.getElementById("sortable").children[j].children[9].value = "";
+	submit();
 }
 
 function importSet(){
@@ -145,9 +160,4 @@ function exportOrder(){
 														document.getElementById("sortable").children[3].children[0].value + " / " +
 														document.getElementById("sortable").children[4].children[0].value + " / " +
 														document.getElementById("sortable").children[5].children[0].value;
-}
-
-function clear() {
-	console.log(number);
-	console.log(document.getElementById("sortable").children[number].children[0].value);
 }
